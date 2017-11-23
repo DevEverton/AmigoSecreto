@@ -33,7 +33,7 @@ class ParticipantesVC: UIViewController, UITableViewDataSource, UITableViewDeleg
         let participantes2 = participantes[indexPath.row]
         let mask = UIImageView(image: #imageLiteral(resourceName: "Oval"))
         participanteCell.fotoParticipante.mask = mask
-        participanteCell.fotoParticipante.image = #imageLiteral(resourceName: "user")
+        participanteCell.fotoParticipante.image = #imageLiteral(resourceName: "man")
         participanteCell.nomeParticipante.text = participantes2.nome
         participanteCell.emailParticipante.text = participantes2.email
         

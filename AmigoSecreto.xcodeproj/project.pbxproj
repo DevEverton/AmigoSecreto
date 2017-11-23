@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		500BA7091FC5DC6E00DBD296 /* EditarParticipante.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500BA7081FC5DC6E00DBD296 /* EditarParticipante.swift */; };
 		502631471FC38A0B002725C2 /* ParticipantesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502631461FC38A0B002725C2 /* ParticipantesVC.swift */; };
 		5026314B1FC3BEE0002725C2 /* ParticipantesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026314A1FC3BEE0002725C2 /* ParticipantesCell.swift */; };
 		5026314D1FC4C180002725C2 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026314C1FC4C180002725C2 /* MaterialView.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		500BA7081FC5DC6E00DBD296 /* EditarParticipante.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarParticipante.swift; sourceTree = "<group>"; };
 		502631461FC38A0B002725C2 /* ParticipantesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantesVC.swift; sourceTree = "<group>"; };
 		5026314A1FC3BEE0002725C2 /* ParticipantesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantesCell.swift; sourceTree = "<group>"; };
 		5026314C1FC4C180002725C2 /* MaterialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				502631461FC38A0B002725C2 /* ParticipantesVC.swift */,
 				5026314A1FC3BEE0002725C2 /* ParticipantesCell.swift */,
 				5026314E1FC516DB002725C2 /* CriarEventoVC.swift */,
+				500BA7081FC5DC6E00DBD296 /* EditarParticipante.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				50E6C0B51FC3324B0053F36E /* AmigoSecreto.xcdatamodeld in Sources */,
 				50E6C0C51FC3384A0053F36E /* RoundedView.swift in Sources */,
 				5026314D1FC4C180002725C2 /* MaterialView.swift in Sources */,
+				500BA7091FC5DC6E00DBD296 /* EditarParticipante.swift in Sources */,
 				5026314F1FC516DB002725C2 /* CriarEventoVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
