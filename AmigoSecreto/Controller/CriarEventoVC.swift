@@ -14,6 +14,9 @@ class CriarEventoVC: UIViewController, UISearchBarDelegate {
     
     @IBOutlet weak var mapa: MKMapView!
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var nomeTextField: UITextField!
+    @IBOutlet weak var dataTextField: UITextField!
+    @IBOutlet weak var valorTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()

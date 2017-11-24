@@ -12,7 +12,7 @@ class EventosVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     
     var eventos = [Evento]()
-    let evento1 = Evento(nome: "Amigo Secreto Zara", data: "22/12/2017", valor: "R$ 100,00", endereco: "Rua José Rufino, 389, Graças, Recife - PE")
+    let evento1 = Evento(nome: "Amigo Secreto Familia", data: "22/12/2017", valor: "R$ 100,00", endereco: "Rua José Rufino, 389, Graças, Recife - PE")
     
 
     
@@ -20,7 +20,7 @@ class EventosVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         super.viewDidLoad()
         
         eventos.append(evento1)
-        eventos.append(Evento(nome: "Amigo secreto Familia Lisboa", data: "22/12/2017", valor: "50,00", endereco: "Rua principal 113, centro, Colares-PA"))
+        eventos.append(Evento(nome: "Amigo secreto Trabalho", data: "22/12/2017", valor: "R$ 50,00", endereco: "Rua principal 113, centro, Colares-PA"))
         
 
     }

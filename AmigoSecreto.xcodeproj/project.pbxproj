@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		500BA7091FC5DC6E00DBD296 /* EditarParticipante.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500BA7081FC5DC6E00DBD296 /* EditarParticipante.swift */; };
+		5022A79B1FC7BED300E30C77 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5022A79A1FC7BED300E30C77 /* Constants.swift */; };
 		502631471FC38A0B002725C2 /* ParticipantesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502631461FC38A0B002725C2 /* ParticipantesVC.swift */; };
 		5026314B1FC3BEE0002725C2 /* ParticipantesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026314A1FC3BEE0002725C2 /* ParticipantesCell.swift */; };
 		5026314D1FC4C180002725C2 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026314C1FC4C180002725C2 /* MaterialView.swift */; };
 		5026314F1FC516DB002725C2 /* CriarEventoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026314E1FC516DB002725C2 /* CriarEventoVC.swift */; };
+		505DB9261FC725ED00D58C57 /* UIImageViewWithMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505DB9251FC725ED00D58C57 /* UIImageViewWithMask.swift */; };
 		50E6C0AD1FC3324B0053F36E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E6C0AC1FC3324B0053F36E /* AppDelegate.swift */; };
 		50E6C0B21FC3324B0053F36E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50E6C0B01FC3324B0053F36E /* Main.storyboard */; };
 		50E6C0B51FC3324B0053F36E /* AmigoSecreto.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 50E6C0B31FC3324B0053F36E /* AmigoSecreto.xcdatamodeld */; };
@@ -24,10 +26,12 @@
 
 /* Begin PBXFileReference section */
 		500BA7081FC5DC6E00DBD296 /* EditarParticipante.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarParticipante.swift; sourceTree = "<group>"; };
+		5022A79A1FC7BED300E30C77 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		502631461FC38A0B002725C2 /* ParticipantesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantesVC.swift; sourceTree = "<group>"; };
 		5026314A1FC3BEE0002725C2 /* ParticipantesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantesCell.swift; sourceTree = "<group>"; };
 		5026314C1FC4C180002725C2 /* MaterialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		5026314E1FC516DB002725C2 /* CriarEventoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriarEventoVC.swift; sourceTree = "<group>"; };
+		505DB9251FC725ED00D58C57 /* UIImageViewWithMask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewWithMask.swift; sourceTree = "<group>"; };
 		50E6C0A91FC3324B0053F36E /* AmigoSecreto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmigoSecreto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50E6C0AC1FC3324B0053F36E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50E6C0B11FC3324B0053F36E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -85,6 +89,7 @@
 		50E6C0C11FC337DA0053F36E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5022A79A1FC7BED300E30C77 /* Constants.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -94,6 +99,7 @@
 			children = (
 				50E6C0C41FC3384A0053F36E /* RoundedView.swift */,
 				5026314C1FC4C180002725C2 /* MaterialView.swift */,
+				505DB9251FC725ED00D58C57 /* UIImageViewWithMask.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -184,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				505DB9261FC725ED00D58C57 /* UIImageViewWithMask.swift in Sources */,
 				50E6C0C71FC33C730053F36E /* EventosVC.swift in Sources */,
 				50E6C0C91FC33DCD0053F36E /* EventoCell.swift in Sources */,
 				502631471FC38A0B002725C2 /* ParticipantesVC.swift in Sources */,
@@ -194,6 +201,7 @@
 				5026314D1FC4C180002725C2 /* MaterialView.swift in Sources */,
 				500BA7091FC5DC6E00DBD296 /* EditarParticipante.swift in Sources */,
 				5026314F1FC516DB002725C2 /* CriarEventoVC.swift in Sources */,
+				5022A79B1FC7BED300E30C77 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

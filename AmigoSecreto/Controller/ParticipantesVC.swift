@@ -16,8 +16,7 @@ class ParticipantesVC: UIViewController, UITableViewDataSource, UITableViewDeleg
         super.viewDidLoad()
         
         self.navigationController?.navigationBar.tintColor = .white
-        participantes.append(Participante(nome: "Everton Lopes Carneiro", email: "everton@gmail.com"))
-        
+        participantes.append(Participante(nome: "Carla Lisboa da Silva", email: "carlalisboa@gmail.com"))
 
     }
     
@@ -31,9 +30,8 @@ class ParticipantesVC: UIViewController, UITableViewDataSource, UITableViewDeleg
         }
         
         let participantes2 = participantes[indexPath.row]
-        let mask = UIImageView(image: #imageLiteral(resourceName: "Oval"))
-        participanteCell.fotoParticipante.mask = mask
-        participanteCell.fotoParticipante.image = #imageLiteral(resourceName: "man")
+
+        participanteCell.fotoParticipante.image = #imageLiteral(resourceName: "carla")
         participanteCell.nomeParticipante.text = participantes2.nome
         participanteCell.emailParticipante.text = participantes2.email
         
