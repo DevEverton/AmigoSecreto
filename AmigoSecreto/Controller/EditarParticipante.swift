@@ -100,6 +100,15 @@ class EditarParticipante: UIViewController, UIPickerViewDataSource, UIPickerView
 
     }
     
+    @IBAction func salvar(_ sender: Any) {
+        
+        guard let nome = nomeTextField.text, let email = emailTextField.text, let preferencias = preferenciasTextField.text, let calcado = calcadoTextField.text, let camisa = camisaTextField.text, let calca = calcaTextField.text else { fatalError() }
+        
+        Variables.participantes.append(Participante(nome: nome, email: email, foto: #imageLiteral(resourceName: "profile"), preferencias: preferencias, calcado: calcado, camisa: camisa, calca: calca))
+        
+        self.navigationController?.popViewController(animated: true)
+
+    }
     
     
     

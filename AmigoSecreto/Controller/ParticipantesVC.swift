@@ -10,18 +10,23 @@ import UIKit
 
 class ParticipantesVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var participantes = [Participante]()
-
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationController?.navigationBar.tintColor = .white
-        participantes.append(Participante(nome: "Carla Lisboa da Silva", email: "carlalisboa@gmail.com"))
 
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        tableView.reloadData()
+    }
+    
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return participantes.count
+        return Variables.participantes.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -29,11 +34,11 @@ class ParticipantesVC: UIViewController, UITableViewDataSource, UITableViewDeleg
             fatalError()
         }
         
-        let participantes2 = participantes[indexPath.row]
+        let participante = Variables.participantes[indexPath.row]
 
-        participanteCell.fotoParticipante.image = #imageLiteral(resourceName: "carla")
-        participanteCell.nomeParticipante.text = participantes2.nome
-        participanteCell.emailParticipante.text = participantes2.email
+        participanteCell.fotoParticipante.image = #imageLiteral(resourceName: "profile")
+        participanteCell.nomeParticipante.text = participante.nome
+        participanteCell.emailParticipante.text = participante.email
         
         return participanteCell
 
@@ -46,10 +51,18 @@ class ParticipantesVC: UIViewController, UITableViewDataSource, UITableViewDeleg
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
+    
+    @IBAction func sortear(_ sender: Any) {
+        
+        Variables.eventos.append(Evento(endereco: Variables.endereco, nome: Variables.nome, data: Variables.data, valor: Variables.valor, participantes: Variables.participantes))
+        self.navigationController?.popViewController(animated: true)
+        
+    }
+    
+    
+
+    
 
 }
 
-struct Participante {
-    let nome: String
-    let email: String
-}
+

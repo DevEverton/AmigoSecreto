@@ -21,8 +21,29 @@ class CriarEventoVC: UIViewController, UISearchBarDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.backBarButtonItem?.tintColor = .white
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationItem.backBarButtonItem?.tintColor = .white
+
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    @IBAction func criarEvento(_ sender: Any) {
+        
+        guard let nome = nomeTextField.text, let data = dataTextField.text, let valor = valorTextField.text else { fatalError() }
+        Variables.nome = nome
+        Variables.data = data
+        Variables.valor = valor
+        Variables.endereco = "Localização do mapa"
+        
+        Variables.participantes = []
+        
+    }
+    
 
 }

@@ -137,6 +137,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="zV6-ly-tqq" id="OVC-E5-tqL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m3B-J2-zOA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -248,6 +251,10 @@
                                 <state key="normal" title="Criar Evento">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="criarEvento:" destination="svO-j8-cND" eventType="touchUpInside" id="0Gr-rG-BCm"/>
+                                    <segue destination="IRu-bk-1Dg" kind="show" id="0qs-u4-CNP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -297,6 +304,9 @@
                                 <state key="normal" title="Sortear">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="sortear:" destination="IRu-bk-1Dg" eventType="touchUpInside" id="yJ7-SL-VWb"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qTb-V9-cSB">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="454"/>
@@ -402,6 +412,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="qTb-V9-cSB" id="zLe-zp-G0Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gAF-mn-8Qq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -422,6 +435,9 @@
                                 <state key="normal" title="Salvar">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="salvar:" destination="hoB-Gu-eDH" eventType="touchUpInside" id="w5f-Px-2O0"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="XgH-wg-mi5">
                                 <rect key="frame" x="20" y="135" width="280" height="277.5"/>
@@ -596,7 +612,7 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileLarger" translatesAutoresizingMaskIntoConstraints="NO" id="ZK1-2l-nkg" customClass="UIImageViewWithMask" customModule="AmigoSecreto" customModuleProvider="target">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carla" translatesAutoresizingMaskIntoConstraints="NO" id="ZK1-2l-nkg">
                                 <rect key="frame" x="107" y="20" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ZK1-2l-nkg" secondAttribute="height" multiplier="1:1" id="V5Y-rV-Uiq"/>
@@ -612,17 +628,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Vrf-jm-opn" firstAttribute="bottom" secondItem="K6L-o9-48n" secondAttribute="bottom" id="6XM-1B-cUP"/>
+                            <constraint firstItem="Vrf-jm-opn" firstAttribute="leading" secondItem="K6L-o9-48n" secondAttribute="leading" id="0LX-9B-v5g"/>
                             <constraint firstItem="K6L-o9-48n" firstAttribute="trailing" secondItem="XgH-wg-mi5" secondAttribute="trailing" constant="20" id="GNW-m2-HTz"/>
-                            <constraint firstItem="Vrf-jm-opn" firstAttribute="leading" secondItem="K6L-o9-48n" secondAttribute="leading" id="Hhu-Jb-4Fe"/>
                             <constraint firstItem="l3p-1c-FlL" firstAttribute="top" secondItem="ZK1-2l-nkg" secondAttribute="top" id="O2M-xr-J36"/>
                             <constraint firstItem="K6L-o9-48n" firstAttribute="trailing" secondItem="ZK1-2l-nkg" secondAttribute="trailing" constant="113" id="OFR-pn-ofD"/>
                             <constraint firstItem="l3p-1c-FlL" firstAttribute="leading" secondItem="ZK1-2l-nkg" secondAttribute="trailing" constant="-13" id="S0u-al-SuQ"/>
                             <constraint firstItem="ZK1-2l-nkg" firstAttribute="leading" secondItem="K6L-o9-48n" secondAttribute="leading" constant="107" id="azX-Wq-Old"/>
                             <constraint firstItem="ZK1-2l-nkg" firstAttribute="top" secondItem="K6L-o9-48n" secondAttribute="top" constant="20" id="e7A-na-hsw"/>
+                            <constraint firstItem="Vrf-jm-opn" firstAttribute="bottom" secondItem="K6L-o9-48n" secondAttribute="bottom" id="gjy-ZM-mvU"/>
+                            <constraint firstItem="Vrf-jm-opn" firstAttribute="trailing" secondItem="K6L-o9-48n" secondAttribute="trailing" id="hcf-dv-383"/>
                             <constraint firstItem="XgH-wg-mi5" firstAttribute="top" secondItem="ZK1-2l-nkg" secondAttribute="bottom" constant="15" id="jw0-Yn-8so"/>
                             <constraint firstItem="XgH-wg-mi5" firstAttribute="leading" secondItem="K6L-o9-48n" secondAttribute="leading" constant="20" id="pnb-7I-HeX"/>
-                            <constraint firstItem="K6L-o9-48n" firstAttribute="trailing" secondItem="Vrf-jm-opn" secondAttribute="trailing" id="ziF-se-Wvc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="K6L-o9-48n"/>
                     </view>
@@ -665,7 +681,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="carla" width="100" height="107"/>
         <image name="profile" width="86" height="86"/>
-        <image name="profileLarger" width="106" height="106"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="6xG-hv-sV8"/>
+    </inferredMetricsTieBreakers>
 </document>
